@@ -1,0 +1,8 @@
+{
+	"instructions": "计算两个时钟之间的时差",
+	"hours": "小时",
+	"minutes": "分钟",
+	"correct": "正确答案",
+	"incorrect": "错误的答案",
+	"submit": "提交"
+}

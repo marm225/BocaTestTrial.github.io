@@ -1,0 +1,16 @@
+{
+	"title": "Welcome to the Boston Cognitive Assessment - BoCA",
+	"go_to_sound_check": "Go to Sound Check",
+	"rotate_device": "Please rotate your device to landscape mode.",
+	"sound_test_title": "Sound Check",
+	"sound_test_info": "This test uses audio instructions.<br>If you can <span class=\"underline em\">hear</span> this message, click the announced number.<br>Otherwise, please increase your speakers volume.",
+	"directions_title": "Directions",
+	"directions_info": "Please do <span class=\"em\">NOT</span> use paper! Solve all questions in your mind.<br>Click &ldquo;Begin Test&rdquo; to proceed.",
+	"begin_test": "Begin Test",
+	"training": "TRAINING",
+	"finish_title": "Thank You!",
+	"finish_caption_completed": "You have completed the test.",
+	"finish_caption_total": "Total score:",
+	"finish_success": "Thank you for completing the test! You will receive an email with the link to the full report.",
+	"finish_error": "Sorry, something went wrong with the application. Please try again and if the error persists let us know."
+}

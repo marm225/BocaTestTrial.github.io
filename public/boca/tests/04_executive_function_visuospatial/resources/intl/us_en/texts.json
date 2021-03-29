@@ -1,0 +1,8 @@
+{
+	"instructions": "Calculate the time difference between the two clocks.",
+	"hours": "HOURS:",
+	"minutes": "MINUTES:",
+	"correct": "Correct",
+	"incorrect": "Incorrect",
+	"submit": "Submit"
+}

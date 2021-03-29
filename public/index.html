@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="BoCa" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css">
+
+    <title>BoCa</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <body class="bg-light">
+      <div class="container">
+      <h3 class="text-center">Boston Cognitive Assessment (BoCA)</h3><br>
+      <label class="text-primary">By submitting this form I acknowledge that this
+      evaluation is my valuable contribution to Alzheimer’s research and promise to complete it to the best of
+      my knowledge.</label>
+      <input type="hidden" id="consent" name="consent" value="By submitting this form I acknowledge that this evaluation is my valuable contribution to Alzheimer’s research and promise to complete it to the best of my knowledge." />
+     
+      <input type="hidden" id="timezone" name="timezone">
+     
+      <div class="d-block my-3">
+      <label for="locale">Language</label>
+      <select class="custom-select d-block w-100" id="locale" name="locale" required>
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
+      <option value="es">Español</option>
+      <option value="cn">中文</option>
+      </select>
+      <div class="invalid-feedback">
+      Required
+      </div>
+      </div>
+      <hr class="mb-4">
+      <div class="alert alert-danger" id="error" style="display:none"></div>
+      <div class="row">
+      <form action="boca\index.html">
+          <input class="btn btn-primary btn-lg btn-block" id="consentButton" name="consentButton" type="submit" value="Start Test"/>
+      </form>
+      </div>
+      </form>
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="%PUBLIC_URL%/javascripts/menu.js"></script>
+     
+
+      
+
+      <footer class="my-2 pt-1 text-muted text-center text-small">
+      <p class="mb-1">&copy;2020 <strong>Alzheimer's Light, LLC</strong></p>
+      </footer>
+
+
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"title": "Bienvenido a la Evaluación Cognitiva de Boston - BoCA",
+	"go_to_sound_check": "Comprobar el sonido",
+	"rotate_device": "Gire su dispositivo al modo horizontal.",
+	"sound_test_title": "Comprobar el sonido",
+	"sound_test_info": "Esta prueba utiliza instrucciones de audio.<br>Si <span class=\"underline em\">escucha</span> este mensaje, toque el dígito que se anunció.<br>De lo contrario, suba el volumen de las bocinas.",
+	"directions_title": "Instrucciones",
+	"directions_info": "¡<span class=\"em\">NO</span> escriba en papel! Resuelva todas las preguntas en su mente.<br>Haga clic en &ldquo;Iniciar prueba&rdquo; para continuar.",
+	"begin_test": "Iniciar prueba",
+	"training": "ENTRENAMIENTO",
+	"finish_title": "Gracias!",
+	"finish_caption_completed": "Has completado la prueba.",
+	"finish_caption_total": "Puntaje total:",
+	"finish_success": "Recibirá un correo electrónico con el enlace al informe completo.",
+	"finish_error": "Algo salió mal. Vuelva a intentarlo y, si el error persiste, avísenos."
+}

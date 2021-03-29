@@ -1,0 +1,871 @@
+html {
+	-webkit-text-size-adjust: 100%;
+	touch-action: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(244, 244, 244);
+	overflow: hidden;
+}
+#survey-body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#survey-body h2,
+#survey-body h3,
+#survey-body p {
+	color: rgb(109, 112, 114);
+}
+#survey-body input[type=button] {
+	position: absolute;
+	padding: 0;
+	border: none;
+	background: none;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	color: #fff;
+	background-color: rgb(26, 179, 148);
+	border-radius: 0.5vw;
+	-webkit-appearance: none;
+}
+#survey-body input[type=button]:hover {
+	background-color: rgb(10, 163, 132);
+}
+#survey-body .survey-panel {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: -110%;
+	top: 0;
+}
+#survey-body .survey-panel h2.bigtitle {
+	position: absolute;
+	left: 3.5vw;
+	top: 2.5vw;
+	padding: 0;
+	margin: 0;
+	font-size: 6vw;
+	font-weight: bold;
+}
+#survey-body .survey-panel h2.title {
+	position: absolute;
+	left: 3.5vw;
+	top: 2.5vw;
+	padding: 0;
+	margin: 0;
+	font-size: 2.2vw;
+	font-weight: bold;
+}
+#survey-body .survey-panel h2.right {
+	left: auto;
+	right: 3.5vw;
+}
+#survey-body .survey-panel .divider {
+	position: absolute;
+	width: 93vw;
+	left: 3.5vw;
+	background-color: #1ab394;
+}
+#survey-body .survey-panel .divider.bigtitle {
+	height: 0.3vw;
+	top: 12.4vw;
+}
+#survey-body .survey-panel .divider.title {
+	height: 0.2vw;
+	top: 6.3vw;
+}
+#survey-body .survey-panel p.infotext {
+	position: absolute;
+	left: 3.5vw;
+	top: 11.8vw;
+	line-height: 5.3vw;
+	font-size: 3vw;
+	font-weight: normal;
+}
+#survey-body .survey-panel p.infotext .em {
+	font-weight: bold;
+}
+#survey-body .survey-panel p.infotext .highlight {
+	color: #1ab394;
+}
+#survey-body .survey-panel p.infotext .underline {
+	text-decoration: underline;
+}
+#survey-body .survey-panel p.infotext .dark {
+	color: #333;
+}
+#survey-body .survey-panel .button-next {
+	right: 3.5vw;
+	bottom: 3vw;
+	width: 21vw;
+	height: 5.5vw;
+	font-size: 2.2vw;
+}
+#survey-body .survey-panel .button-next.big {
+	width: 23vw;
+	height: 6.5vw;
+	font-size: 2.5vw;
+}
+/* loadscreen panel */
+#panel-loadscreen {
+	background-image: url('../resources/img/load.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* welcome panel */
+#panel-welcome h2.centertitle {
+	position: absolute;
+	width: 90%;
+	top: 12vw;
+	line-height: 7.2vw;
+	padding: 0 5%;
+	margin: 0;
+	text-align: center;
+	font-size: 5vw;
+	font-weight: bold;
+}
+#panel-welcome h3.centertitle {
+	position: absolute;
+	width: 90%;
+	bottom: 4vw;
+	line-height: 7.2vw;
+	padding: 0 5%;
+	margin: 0;
+	text-align: center;
+	font-size: 3.5vw;
+	font-weight: bold;
+}
+h3#rotate-device-notice {
+	display: none;
+	font-weight: normal;
+	color: #1ab394;
+}
+#button-goto-soundcheck {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 37vw;
+	width: 40vw;
+	height: 10vw;
+	font-size: 3.3vw;
+}
+/* soundtest panel */
+#survey-body .survey-panel p.infotext#panel-soundtest-info {
+	line-height: 4.5vw;
+}
+#button-begin-survey {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 40.5vw;
+	width: 40vw;
+	height: 10vw;
+	font-size: 3.3vw;
+}
+/* finish panel */
+#panel-finish .infotext .scoretable {
+	display: block;
+	width: 72vw;
+	font-size: 3vw;
+	line-height: 4.1vw;
+	padding-top: 1.5vw;
+	padding-left: 10vw;
+}
+#panel-finish span {
+	display: inline-block;
+}
+#panel-finish .infotext .scoretable .score-test {
+	padding-left: 3.5vw;
+}
+#panel-finish .infotext .scoretable .score {
+	position: absolute;
+	right: 0vw;
+}
+#panel-finish .message-bar {
+	position: absolute;
+	width: 100%;
+	height: 5.2vw;
+	left: 0;
+	top: 62vw;
+	opacity: 0;
+}
+#panel-finish .message-bar.success {
+	background-color: #4dbb1a;
+}
+#panel-finish .message-bar.error {
+	background-color: #c24c25;
+}
+#panel-finish .message-bar .message-content {
+	position: absolute;
+	width: 100%;
+	height: 5vw;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-size: 2.1vw;
+	font-weight: normal;
+	line-height: 4.9vw;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+/* subtest styles */
+#survey-body .survey-panel .earicon {
+	position: absolute;
+	width: 7vw;
+	height: 8vw;
+	top: 8.8vw;
+	right: 2vw;
+	background-image: url('../resources/img/ear.svg');
+	background-repeat: no-repeat;
+	background-size: 5.5vw;
+
+	opacity: 0;
+}
+#survey-body .survey-panel .timebar {
+	position: absolute;
+	width: 93vw;
+	height: 1.5vw;
+	top: 6.3vw;
+	left: 3.5vw;
+	background-color: #1ab394;
+	opacity: 0;
+}
+#survey-body .survey-panel .timebar .inner {
+	position: absolute;
+	width: 92.4vw;
+	height: 0.9vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #fff;
+}
+#survey-body .survey-panel .timebar .inner .fill {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #1ab394;
+}
+#survey-body .survey-panel p.instructions {
+	position: absolute;
+	left: 3.5vw;
+	top: 5vw;
+	line-height: 5.3vw;
+	font-size: 3vw;
+	font-weight: normal;
+	opacity: 0;
+}
+#survey-body .survey-panel .button-container {
+	display: none;
+	position: absolute;
+	height: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	opacity: 0;
+}
+#survey-body .survey-panel .button-container.row-2-1 {
+	top: 24vw;
+}
+#survey-body .survey-panel .button-container.row-2-2 {
+	top: 36.5vw;
+}
+#survey-body .survey-panel .button-container.row-3-1 {
+	top: 18vw;
+}
+#survey-body .survey-panel .button-container.row-3-2 {
+	top: 31vw;
+}
+#survey-body .survey-panel .button-container.row-3-3 {
+	top: 44vw;
+}
+#survey-body .survey-panel .button-container.row-4-1 {
+	top: 20vw;
+}
+#survey-body .survey-panel .button-container.row-4-2 {
+	top: 30vw;
+}
+#survey-body .survey-panel .button-container.row-4-3 {
+	top: 40vw;
+}
+#survey-body .survey-panel .button-container.row-4-4 {
+	top: 50vw;
+}
+#survey-body .survey-panel .button-container.higher {
+	margin-top: -2vw;
+}
+#survey-body .survey-panel .button-container.container-3 {
+	width: 65vw;
+	padding-left: 6.2vw;
+}
+#survey-body .survey-panel .button-container.container-4 {
+	width: 83vw;
+	padding-left: 6vw;
+}
+#survey-body .survey-panel .button-container.container-5 {
+	width: 83vw;
+	padding-left: 2.5vw;
+}
+#survey-body .survey-panel .button-container.container-7 {
+	width: 86vw;
+	padding-left: 3vw;
+}
+#survey-body .survey-panel .button-container.container-8 {
+	width: 86vw;
+	padding-left: 3vw;
+}
+#survey-body .survey-panel .toggle-button {
+	float: left;
+	color: #eee;
+	background-color: #839d97;
+	font-size: 2vw;
+	font-weight: normal;
+	text-align: center;
+	border-radius: 0.3vw;
+	overflow: hidden;
+	text-transform: capitalize;
+	cursor: default;
+	touch-action: none;
+}
+#survey-body .survey-panel .button-container.container-3 .toggle-button,
+#survey-body .survey-panel .button-container.container-4 .toggle-button {
+	width: 16vw;
+	height: 10vw;
+	line-height: 10vw;
+	margin-right: 3vw;
+}
+#survey-body .survey-panel .button-container.container-4 .toggle-button.narrow {
+	height: 8vw;
+	line-height: 8vw;
+}
+#survey-body .survey-panel .button-container.container-5 .toggle-button {
+	width: 14vw;
+	height: 10vw;
+	line-height: 10vw;
+	margin-right: 2.5vw;
+}
+#survey-body .survey-panel .button-container.container-5 .toggle-button.narrow {
+	height: 8.5vw;
+	line-height: 8.5vw;
+}
+#survey-body .survey-panel .button-container.container-7 .toggle-button {
+	width: 8.5vw;
+	height: 9vw;
+	line-height: 9vw;
+	margin-right: 2.5vw;
+}
+#survey-body .survey-panel .button-container.container-8 .toggle-button {
+	width: 9vw;
+	height: 8vw;
+	line-height: 8vw;
+	margin-right: 1.5vw;
+}
+#survey-body .survey-panel .toggle-button.active {
+	color: #fff;
+	background-color: #1ab394;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+#survey-body .survey-panel .toggle-button.mistake {
+	color: #fff;
+	background-color: #d24a31;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+#survey-body .survey-panel .toggle-button.digit {
+	font-size: 4vw;
+}
+
+/* soundcheck panel */
+#panel-soundtest.survey-panel .earicon {
+	top: 15.5vw;
+}
+#panel-soundtest.survey-panel .button-container.row-3-2 {
+	top: 35vw;
+}
+#panel-soundtest.survey-panel .button-container.row-3-3 {
+	top: 48vw;
+}
+
+/* generic */
+#survey-body .survey-panel .click-again-label,
+#survey-body .survey-panel .correct-label {
+	position: absolute;
+	width: 100%;
+	height: 5vw;
+	line-height: 5vw;
+	left: 0;
+	top: 61vw;
+	text-align: center;
+	font-size: 3vw;
+	color: #1ab394;
+	font-weight: bold;
+	opacity: 0;
+}
+#survey-body .survey-panel .correct-label.correct {
+	color: #1ab394;
+}
+#survey-body .survey-panel .correct-label.incorrect {
+	color: #d24a31;
+}
+#survey-body .survey-panel .toggle-button.clickagain {
+	background-color: #eee;
+	border: 0.5vw solid #839d97;
+	border-radius: 1vw;
+	color: rgb(109, 112, 114);
+	font-size: 4vw;
+	font-weight: normal;
+}
+#survey-body .survey-panel .toggle-button.clickagain.active {
+	border-color: #1ab394;
+	background-color: #fff;
+}
+#survey-body .survey-panel .toggle-button.clickagain.mistake {
+	background-color: #ccc;
+	border-color: #d24a31;
+}
+
+/* subtest 02 */
+#subtest2.survey-panel .button-container {
+	width: 100%;
+	display: none;
+}
+#subtest2.survey-panel .button-container.row-2-1 {
+	top: 20vw;
+	padding-left: 10vw;
+}
+#subtest2.survey-panel .button-container.row-2-2 {
+	top: 36vw;
+	padding-left: 17.5vw;
+}
+#subtest2.survey-panel .button-container.row-3-1 {
+	top: 14vw;
+	padding-left: 4vw;
+}
+#subtest2.survey-panel .button-container.row-3-2 {
+	top: 30vw;
+	padding-left: 4vw;
+}
+#subtest2.survey-panel .button-container.row-3-3 {
+	top: 46vw;
+	padding-left: 4vw;
+}
+#subtest2.survey-panel .button-container.row-1-1.ltest3 {
+	top: 27vw;
+	padding-left: 4vw;
+}
+#subtest2.survey-panel .button-container.row-1.ltest4 {
+	top: 32vw;
+	padding-left: 18vw;
+}
+#subtest2.survey-panel .button-container.row-1.ltest5 {
+	top: 32vw;
+	padding-left: 8.3vw;
+}
+#subtest2.survey-panel .button-container.ltest1 .toggle-button,
+#subtest2.survey-panel .button-container.ltest2 .toggle-button,
+#subtest2.survey-panel .button-container.ltest3 .toggle-button {
+	width: 13vw;
+	height: 13vw;
+	margin-right: 1.5vw;
+	background-color: #eee;
+	border: 0.5vw solid #839d97;
+	border-radius: 1vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: auto;
+}
+#subtest2.survey-panel .button-container.ltest1 .toggle-button {
+	background-size: 34vw;
+}
+#subtest2.survey-panel .button-container.ltest2 .toggle-button {
+	background-size: 27vw;
+}
+#subtest2.survey-panel .button-container.ltest3 .toggle-button {
+	background-size: 18vw;
+}
+#subtest2.survey-panel .button-container.ltest1 .toggle-button.active,
+#subtest2.survey-panel .button-container.ltest2 .toggle-button.active,
+#subtest2.survey-panel .button-container.ltest3 .toggle-button.active {
+	border-color: #1ab394;
+	background-color: #fff;
+}
+#subtest2.survey-panel .button-container.ltest1 .toggle-button.mistake,
+#subtest2.survey-panel .button-container.ltest2 .toggle-button.mistake,
+#subtest2.survey-panel .button-container.ltest3 .toggle-button.mistake {
+	background-color: #ccc;
+	border-color: #d24a31;
+}
+#subtest3.survey-panel .button-container .toggle-button .caption.correct {
+	color: #1ab394;
+}
+#subtest3.survey-panel .button-container .toggle-button .caption.incorrect {
+	color: #d24a31;
+}
+#subtest2.survey-panel .button-container.ltest4 .toggle-button {
+	width: 28vw;
+	height: 8vw;
+	line-height: 8vw;
+	margin-right: 3vw;
+}
+#subtest2.survey-panel .button-container.ltest5 .toggle-button {
+	width: 25vw;
+	height: 8vw;
+	line-height: 8vw;
+	margin-right: 2.7vw;
+}
+/* subtest 03 */
+#survey-body .survey-panel .control-image {
+	position: absolute;
+	width: 100%;
+	height: 20vw;
+	top: 12.7vw;
+	background-position: center center;
+	background-size: 34vw;
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+#subtest3.survey-panel .button-container {
+	top: 33vw;
+	width: 80vw;
+	padding-left: 8vw;
+}
+#subtest3.survey-panel .button-container .toggle-button {
+	width: 21vw;
+	height: 21vw;
+	margin-right: 3vw;
+	background-color: #eee;
+	border: 0.5vw solid #839d97;
+	border-radius: 1vw;
+	background-position: center;
+	background-size: 34vw;
+	background-repeat: no-repeat;
+	overflow: auto;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+#subtest3.survey-panel .button-container .toggle-button.active {
+	border-color: #1ab394;
+	background-color: #fff;
+}
+#subtest3.survey-panel .button-container .toggle-button.mistake {
+	background-color: #ccc;
+	border-color: #d24a31;
+}
+#subtest3.survey-panel .button-container .toggle-button .caption {
+	position: absolute;
+	width: 21vw;
+	height: 3vw;
+	top: 22vw;
+	color: #333;
+	font-size: 2.8vw;
+	font-weight: bold;
+	line-height: 3.2vw;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-ms-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
+}
+#subtest3.survey-panel .button-container .toggle-button .caption.correct {
+	color: #1ab394;
+}
+#subtest3.survey-panel .button-container .toggle-button .caption.incorrect {
+	color: #d24a31;
+}
+#subtest3.survey-panel .button-container .toggle-button.correct.with-caption .caption.correct,
+#subtest3.survey-panel .button-container .toggle-button.mistake.with-caption .caption.incorrect {
+	opacity: 1;
+}
+/* subtest 04 */
+#survey-body .survey-panel .analog-clock {
+	position: absolute;
+	width: 28vw;
+	height: 28vw;
+	top: 19vw;
+	background-color: #1ab394;
+	border-radius: 50%;
+	border: 1vw solid #086b57;
+	overflow: hidden;
+	opacity: 0;
+}
+#survey-body .survey-panel .analog-clock.left {
+	left: 3vw;
+}
+#survey-body .survey-panel .analog-clock.right {
+	left: 36vw;
+}
+#survey-body .survey-panel .analog-clock .clock-inner {
+	position: absolute;
+	width: 95%;
+	height: 95%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #b8cbc0;
+	background-color: #fff;
+	border-radius: 50%;
+	background-size: cover;
+	background-size: 128%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#survey-body .survey-panel .analog-clock .digit {
+	position: absolute;
+	width: 6vw;
+	height: 6vw;
+	line-height: 6vw;
+	font-size: 3.8vw;
+	font-weight: bold;
+	color: #086b57;
+	text-align: center;
+}
+#survey-body .survey-panel .analog-clock .digit.d1 {
+	right: 5.9vw;
+	top: 2.4vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d2 {
+	right: 2.5vw;
+	top: 5.5vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d3 {
+	right: 0.8vw;
+	top: 10.85vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d4 {
+	right: 2.5vw;
+	top: 15.7vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d5 {
+	right: 5.9vw;
+	top: 19.3vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d6 {
+	left: 11vw;
+	bottom: 1.2vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d7 {
+	left: 6.1vw;
+	top: 19.1vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d8 {
+	left: 2.5vw;
+	top: 15.6vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d9 {
+	left: 0.8vw;
+	top: 10.85vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d10 {
+	top: 6.1vw;
+	left: 2.9vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d11 {
+	top: 2.4vw;
+	left: 6.2vw;
+}
+#survey-body .survey-panel .analog-clock .digit.d12 {
+	left: 11vw;
+	top: 0.8vw;
+}
+#survey-body .survey-panel .analog-clock .minute-hand {
+	position: absolute;
+	width: 0.8vw;
+	height: 8.2vw;
+	left: 13.65vw;
+	top: 14vw;
+	background-color: black;
+	border-radius: 2vw;
+}
+#survey-body .survey-panel .analog-clock .hour-hand {
+	position: absolute;
+	width: 1vw;
+	height: 5.2vw;
+	left: 13.4vw;
+	top: 14vw;
+	background-color: #ffac0d;
+	border: 0.1vw solid #000;
+	-webkit-border-bottom-right-radius: 0.5vw;
+	-webkit-border-bottom-left-radius: 0.5vw;
+	-moz-border-radius-bottomright: 0.5vw;
+	-moz-border-radius-bottomleft: 0.5vw;
+	border-bottom-right-radius: 0.5vw;
+	border-bottom-left-radius: 0.5vw;
+}
+#survey-body .survey-panel .analog-clock .center-nut {
+	position: absolute;
+	width: 1.2vw;
+	height: 1.2vw;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #1ab394;
+	background-color: #fff;
+	border: 0.1vw solid #086b57;
+	border-radius: 50%;
+}
+#survey-body .survey-panel .clock-input {
+	position: absolute;
+	width: 26vw;
+	height: 7vw;
+	right: 4vw;
+	background-color: #fff;
+	border-radius: 1vw;
+	overflow: hidden;
+	opacity: 0;
+}
+#survey-body .survey-panel .clock-input.left {
+	top: 20vw;
+}
+#survey-body .survey-panel .clock-input.right {
+	top: 34vw;
+}
+#survey-body .survey-panel .clock-input .digit-input {
+	position: absolute;
+	width: 7vw;
+	height: 7vw;
+	top: 0;
+	background-color: rgb(26, 179, 148);
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+#survey-body .survey-panel .clock-input .digit-input:hover {
+	background-color: rgb(10, 163, 132);
+}
+#survey-body .survey-panel .clock-input.mistake .digit-input,
+#survey-body .survey-panel .clock-input.mistake .digit-input:hover {
+	background-color: #d24a31;
+}
+#survey-body .survey-panel .clock-input .digit-input.left {
+	left: 0;
+	background-position: 1.7vw 55%;
+}
+#survey-body .survey-panel .clock-input .digit-input.right {
+	right: 0;
+	background-position: 2.55vw 45%;
+}
+#survey-body .survey-panel .clock-input .digit-display {
+	position: absolute;
+	width: 14vw;
+	height: 6.6vw;
+	line-height: 6.4vw;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+	font-size: 5.5vw;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0.5vw;
+	color: rgb(109, 112, 114);
+	color: #333;
+	background-color: #fff;
+	border-top: 0.2vw solid rgb(26, 179, 148);
+	border-bottom: 0.2vw solid rgb(26, 179, 148);
+}
+#survey-body .survey-panel .clock-input.mistake .digit-display {
+	border-top-color: #d24a31;
+	border-bottom-color: #d24a31;
+}
+#survey-body .survey-panel .clock-input-title {
+	position: absolute;
+	width: 26vw;
+	right: 4vw;
+	text-align: left;
+	font-size: 3.2vw;
+	font-weight: bold;
+	color: rgb(109, 112, 114);
+	opacity: 0;
+}
+#survey-body .survey-panel .clock-input-title.left {
+	top: 15vw;
+}
+#survey-body .survey-panel .clock-input-title.right {
+	top: 29vw;
+}
+#survey-body .survey-panel .clock-submit {
+	position: absolute;
+	width: 26vw;
+	height: 7.6vw;
+	font-size: 2.8vw;
+	right: 4vw;
+	top: 45vw;
+	opacity: 0;
+}
+#subtest4.survey-panel .caption {
+	position: absolute;
+	width: 100%;
+	height: 5vw;
+	bottom: 5vw;
+	left: 0;
+	line-height: 5vw;
+	text-align: center;
+	font-size: 4vw;
+	font-weight: bold;
+	opacity: 0;
+}
+#subtest4.survey-panel .caption.correct {
+	color: #1ab394;
+}
+#subtest4.survey-panel .caption.incorrect {
+	color: #d24a31;
+}
+
+/* subtest 07 */
+#survey-body .survey-panel .button-container .toggle-button.month {
+	font-size: 2.4vw;
+	width: 15vw;
+	height: 9vw;
+	line-height: 9vw;
+}
+#survey-body .survey-panel .button-container .toggle-button.year {
+	font-size: 2.7vw;
+	width: 13vw;
+	height: 7vw;
+	line-height: 7vw;
+}
+#survey-body .survey-panel .button-container .toggle-button.dotw {
+	font-size: 2.5vw;
+	width: 16.5vw;
+	height: 9vw;
+	line-height: 9vw;
+	margin-right: 2.6vw;
+}
+
+/* subtest 08 */
+#subtest8.survey-panel .button-container.row-2-1 {
+	top: 27.5vw;
+}
+#subtest8.survey-panel .button-container.row-2-2 {
+	top: 40vw;
+}

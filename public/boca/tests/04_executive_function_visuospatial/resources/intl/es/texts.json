@@ -1,0 +1,8 @@
+{
+	"instructions": "Calcule la diferencia horaria entre los dos relojes.",
+	"hours": "HORAS:",
+	"minutes": "MINUTOS:",
+	"correct": "Respuesta correcta",
+	"incorrect": "Respuesta incorrecta",
+	"submit": "Enviar"
+}

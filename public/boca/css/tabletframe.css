@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	overflow: hidden;
+}
+#tablet-frame {
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.mobile #tablet-frame-container {
+	height: 100%;
+}
+#tablet-frame-edge {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #939194;
+	background: -moz-linear-gradient(-45deg, #939194 0%, #343332 100%);
+	background: -webkit-linear-gradient(-45deg, #939194 0%,#343332 100%);
+	background: linear-gradient(135deg, #939194 0%,#343332 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939194', endColorstr='#343332',GradientType=1 );
+	border-radius: 1.2vw;
+}
+.mobile #tablet-frame-edge {
+	background: transparent;
+	border-radius: 0;
+}
+#tablet-frame-front {
+	position: absolute;
+	width: 99.4%;
+	height: 99%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #1f2123;
+	background: -moz-linear-gradient(-45deg, #1f2123 0%, #090a0c 100%);
+	background: -webkit-linear-gradient(-45deg, #1f2123 0%,#090a0c 100%);
+	background: linear-gradient(135deg, #1f2123 0%,#090a0c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2123', endColorstr='#090a0c',GradientType=1 );
+	border-radius: 1.2vw;
+}
+.mobile #tablet-frame-front {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border-radius: 0;
+}
+#tablet-knob {
+	position: absolute;
+	width: 5%;
+	height: 7.6%;
+	top: 0;
+	left: 1.5%;
+	bottom: 0;
+	padding: 0;
+	margin: auto 0;
+	cursor: pointer;
+}
+.mobile #tablet-knob {
+	display: none;
+}
+#tablet-knob .knob-border {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #222;
+	border-radius: 50%;
+}
+#tablet-knob .knob-background {
+	position: absolute;
+	width: 92%;
+	height: 92%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #020202;
+	background: -moz-linear-gradient(-45deg, #020202 0%, #373b40 100%);
+	background: -webkit-linear-gradient(-45deg, #020202 0%,#373b40 100%);
+	background: linear-gradient(135deg, #020202 0%,#373b40 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020202', endColorstr='#373b40',GradientType=1 );
+	border-radius: 50%;
+}
+#tablet-knob:active .knob-background {
+	background: #444;
+}
+#tablet-knob .knob-icon {
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 0.12vw solid #88878c;
+	border-radius: 0.4vw;
+}
+#tablet-knob:active .knob-icon {
+	border: 0.12vw solid #bbb;
+}
+#tablet-cam-decor {
+	position: absolute;
+	width: 1%;
+	height: 1.4%;
+	top: 0;
+	right: 1.6%;
+	bottom: 0;
+	padding: 0;
+	margin: auto 0;
+	border: 0.3vw solid #141414;
+	background-color: #000;
+	border-radius: 50%;
+}
+#tablet-screen {
+	position: absolute;
+	width: 86.5%;
+	height: 86%;
+	right: 5.5%;
+	top: 7%;
+	border: 0;
+	background-color: #000;
+	overflow: hidden;
+}
+.mobile #tablet-screen {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+#al-interface {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}

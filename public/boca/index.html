@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BoCA (Boston Cognitive Assessment) test</title>
+    <!-- tablet frame CSS -->
+    <link rel="stylesheet" href="css/tabletframe.css">
+	<!-- libraries -->
+	<script src="lib/screenfull.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+<!-- tablet frame -->
+<div id="tablet-frame">
+    <div id="tablet-frame-edge">
+        <div id="tablet-frame-front">
+            <a href="https://alz.life" id="tablet-knob" target="_blank">
+                <div class="knob-border"></div>
+                <div class="knob-background"></div>
+                <div class="knob-icon"></div>
+            </a>
+            <div id="tablet-cam-decor"></div>
+            <div id="tablet-screen">
+                <iframe id="al-interface" src="survey.html" frameborder="0" ></iframe>
+            </div>
+          </div>
+    </div>
+</div>
+<!-- script -->
+<script src="src/tabletframe.js"></script>
+<script>
+(function () {
+	'use strict';
+	window.addEventListener('beforeunload', function (event) {
+		event.returnValue = 'Are you sure?';
+	});
+})();
+</script>
+</body>
+</html>
+

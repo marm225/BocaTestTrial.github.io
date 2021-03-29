@@ -1,0 +1,16 @@
+{
+	"title": "BoCA波士顿认知评估",
+	"go_to_sound_check": "此测试使用音频说明。",
+	"rotate_device": "将设备转到横向模式",
+	"sound_test_title": "检查声音",
+	"sound_test_info": "此测试使用音频说明。<br>如果您听到此消息，请点击已播报的数字。",
+	"directions_title": "使用说明",
+	"directions_info": "请不要写在纸上！在脑中所有问题。<br>点击“开始测试”开始。",
+	"begin_test": "开始测试",
+	"training": "训练",
+	"finish_title": "谢谢",
+	"finish_caption_completed": "您已经完成测试",
+	"finish_caption_total": "总得分",
+	"finish_success": "您将收到一封包含完整报告链接的电子邮件。",
+	"finish_error": "出问题了。请重试，如果错误仍然存​​在，请通知我们"
+}

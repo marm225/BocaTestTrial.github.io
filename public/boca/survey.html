@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Cognitive Test Survey</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/survey.css?v=2.6">
+	<!-- libraries -->
+	<script src="lib/TweenMax.min.js"></script>
+	<script src="lib/howler.min.js"></script>
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+</head>
+<body>
+	<div id="survey-body">
+		<div id="panel-loadscreen" class="survey-panel"></div>
+		<div id="panel-welcome" class="survey-panel">
+			<h2 id="boca-title" class="centertitle">Welcome to the Boston Cognitive Assessment - BoCA</h2>
+			<h3 id="rotate-device-notice" class="centertitle">Please rotate your device to landscape mode.</h3>
+			<input type="button" id="button-goto-soundcheck" value="Go to Sound Check">
+		</div>
+		<div id="panel-soundtest" class="survey-panel">
+			<h2 id="panel-soundtest-title" class="bigtitle">Sound Check</h2>
+			<div class="bigtitle divider"></div>
+			<div class="earicon"></div>
+			<p id="panel-soundtest-info" class="infotext">
+				This test uses audio instructions.<br>
+				If you can <span class="underline em">hear</span> this message, click the announced number.<br>
+				Otherwise, please increase your speakers volume.
+			</p>
+			<div class="button-container row-3-2 container-5">
+				<div class="toggle-button digit" data-num="1">1</div>
+				<div class="toggle-button digit" data-num="2">2</div>
+				<div class="toggle-button digit" data-num="3">3</div>
+				<div class="toggle-button digit" data-num="4">4</div>
+				<div class="toggle-button digit" data-num="5">5</div>
+			</div>
+			<div class="button-container row-3-3 container-5">
+				<div class="toggle-button digit" data-num="6">6</div>
+				<div class="toggle-button digit" data-num="7">7</div>
+				<div class="toggle-button digit" data-num="8">8</div>
+				<div class="toggle-button digit" data-num="9">9</div>
+				<div class="toggle-button digit" data-num="10">10</div>
+			</div>
+		</div>
+		<div id="panel-directions" class="survey-panel">
+			<h2 id="panel-directions-title" class="bigtitle">Directions</h2>
+			<div class="bigtitle divider"></div>
+			<p id="panel-directions-info" class="infotext">
+				Please do <span class="em">NOT</span> use paper! Solve all questions in your mind.<br>
+				Click &ldquo;Begin Test&rdquo; to proceed.
+			</p>
+			<input type="button" id="button-begin-survey" value="Begin Test">
+		</div>
+		<div id="panel-finish" class="survey-panel">
+			<h2 id="panel-finish-title" class="bigtitle">Thank You!</h2>
+			<div class="bigtitle divider"></div>
+			<p class="infotext">
+				<span id="panel-finish-caption-completed">You have completed the test.</span><br>
+				<span id="panel-finish-caption-total">Total score:</span> <span class="em highlight"><span id="score-total">0</span>/30</span><br>
+				<span class="scoretable">
+					<span class="em">1</span> <span id="panel-finish-test-1" class="score-test">Memory - Immediate Recall</span> <span class="score em highlight"><span id="score-test1">0</span>/2</span><br>
+					<span class="em">2</span> <span id="panel-finish-test-2" class="score-test">Language / Prefrontal Synthesis</span> <span class="score em highlight"><span id="score-test2">0</span>/5</span><br>
+					<span class="em">3</span> <span id="panel-finish-test-3" class="score-test">Executive function / Mental rotation</span> <span class="score em highlight"><span id="score-test3">0</span>/3</span><br>
+					<span class="em">4</span> <span id="panel-finish-test-4" class="score-test">Executive function / Visuospatial</span> <span class="score em highlight"><span id="score-test4">0</span>/4</span><br>
+					<span class="em">5</span> <span id="panel-finish-test-5" class="score-test">Attention</span> <span class="score em highlight"><span id="score-test5">0</span>/4</span><br>
+					<span class="em">6</span> <span id="panel-finish-test-6" class="score-test">Mental Math</span> <span class="score em highlight"><span id="score-test6">0</span>/4</span><br>
+					<span class="em">7</span> <span id="panel-finish-test-7" class="score-test">Orientation</span> <span class="score em highlight"><span id="score-test7">0</span>/3</span><br>
+					<span class="em">8</span> <span id="panel-finish-test-8" class="score-test">Memory - Delayed Recall</span> <span class="score em highlight"><span id="score-test8">0</span>/5</span>
+				</span>
+			</p>
+			<div class="message-bar">
+				<p class="message-content"></p>
+			</div>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="src/survey.js?v=2.6"></script>
+</body>
+</html>
